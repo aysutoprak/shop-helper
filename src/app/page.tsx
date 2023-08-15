@@ -22,8 +22,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="font-mono">
         <div className='flex flex-col m-5'>
-          <div className='flex flex-row '>
-            <div className={`flex flex-col mx-5 border-solid border-2 border-orange-600 p-10 ${result === 'first' ? 'bg-green-300 border-blue-600' : 'border-orange-600'}`}>
+          <div className='flex md:flex-row justify-between flex-col'>
+            <div className={`flex flex-col mx-5 border-solid border-2 mb-8 md:mb-0 p-10 ${result === 'first' ? 'bg-green-300 border-blue-600' : 'border-orange-600'}`}>
               <div className='flex flex-row gap-3'>
                 <FaWeightHanging />
                 <input onChange={(e) => setweight1(parseInt(e.target.value))} className='mb-5' type="text" />
